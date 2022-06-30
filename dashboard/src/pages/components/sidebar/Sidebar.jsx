@@ -21,57 +21,65 @@ export default function Sidebar() {
       <hr />
       <div className="center">
         <ul>
+          <p className="title"> MAIN</p>
           <li>
-            <DashboardIcon />
+            <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
+          <p className="title">LISTS</p>
           <li>
-            <PersonOutlineIcon />
+            <PersonOutlineIcon className="icon" />
             <span>Users</span>
           </li>{" "}
           <li>
-            <LocalConvenienceStoreIcon />
+            <LocalConvenienceStoreIcon className="icon" />
             <span>Products</span>
           </li>
           <li>
-            <ListAltIcon />
+            <ListAltIcon className="icon" />
             <span>Orders</span>
           </li>
           <li>
-            <DirectionsCarFilledIcon />
+            <DirectionsCarFilledIcon className="icon" />
             <span>Delivery</span>
           </li>
+          <p className="title">USEFUL</p>
           <li>
-            <QueryStatsIcon />
+            <QueryStatsIcon className="icon" />
             <span>Stats</span>
           </li>
           <li>
-            <NotificationsIcon />
+            <NotificationsIcon className="icon" />
             <span>Notifications</span>
           </li>
+          <p className="title">SERVICE</p>
           <li>
-            <MonitorHeartIcon />
+            <MonitorHeartIcon className="icon" />
             <span>System Health</span>
           </li>
           <li>
-            <SummarizeIcon />
+            <SummarizeIcon className="icon" />
             <span>Logs</span>
           </li>
           <li>
-            <SettingsIcon />
+            <SettingsIcon className="icon" />
             <span>Settings</span>
           </li>
+          <p className="title"> USER</p>
           <li>
-            <AccountCircleIcon />
+            <AccountCircleIcon className="icon" />
             <span>Profile</span>
           </li>
           <li>
-            <LogoutIcon />
+            <LogoutIcon className="icon" />
             <span>Logout</span>
           </li>
         </ul>
       </div>
-      <div className="bottom"> color options</div>
+      <div className="bottom">
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
+      </div>
     </div>
   );
 }

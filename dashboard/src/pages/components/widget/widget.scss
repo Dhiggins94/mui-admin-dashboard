@@ -1,0 +1,51 @@
+.widget{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.744);
+  border-radius: 10px;
+  height: 100px;
+
+  .left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title{
+      font-weight: bold;
+      font-size: 15px;
+      color: rgb(164, 161, 161);
+    }
+    .counter{
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .link{
+      width: max-content;
+      font-size: 12px;
+      border-bottom: 1px solid gray;
+    }
+    .percentage{
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+
+      &.positive{
+        color:green;
+      }
+      &.negative{
+        color:red;
+      }
+    }
+
+    .icon{
+      font-size: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      align-self: flex-end;
+    }
+  }
+}
+
+// here the use of flex is better than adding custom width in case different screen sizes cant see the widgets

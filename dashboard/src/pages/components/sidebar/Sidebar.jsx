@@ -1,5 +1,7 @@
 import React from "react";
 import "./sidebar.scss";
+import { Link } from "react-router-dom";
+// icons
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LocalConvenienceStoreIcon from "@mui/icons-material/LocalConvenienceStore";
@@ -12,11 +14,14 @@ import SummarizeIcon from "@mui/icons-material/Summarize";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import LogoutIcon from "@mui/icons-material/Logout";
+// icons
 export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">MyAdmin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">MyAdmin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -27,14 +32,18 @@ export default function Sidebar() {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <li>
-            <PersonOutlineIcon className="icon" />
-            <span>Users</span>
-          </li>{" "}
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineIcon className="icon" />
+              <span>Users</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{textDecoration: "none"}}> 
           <li>
             <LocalConvenienceStoreIcon className="icon" />
             <span>Products</span>
-          </li>
+            </li>
+            </Link>
           <li>
             <ListAltIcon className="icon" />
             <span>Orders</span>
